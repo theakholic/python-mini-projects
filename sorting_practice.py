@@ -141,3 +141,23 @@ def merge_sort(L, compare = operator.lt):
     lower = merge_sort(L[:mid], compare)
     upper = merge_sort(L[mid:],compare)
     return merge(lower, upper, compare)
+
+
+def a_search(L, e):
+    for i in range(len(L)):
+        if L[i] == e:
+            return True
+        if L[i] > e:
+            return False
+    return False
+
+def newsearch(L, e):
+    size = len(L)
+    for i in range(size):
+        print('i = {}'.format(i))
+        print('L[size-i-1] = {}'.format(L[size-i-1]))
+        if L[size-i-1] == e:
+            return True
+        if L[i] < e:
+            return False
+    return False
