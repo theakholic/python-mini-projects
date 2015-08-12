@@ -136,7 +136,7 @@ def pi(p):
 ##        else:
 ##            raise ValueError("Cannot compute PI(x) for non-integral x.")
 
-    #----------REFACTORED-------------
+    #----------REFACTORED-------------#
 
     for e in p:
         assert isinstance(e, int), "Elements in the argument (list) must be integral."
